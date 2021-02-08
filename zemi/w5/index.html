@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">{{ message }}</div>
+
+    <div id="app-2">
+      <span v-bind:title="message">
+        Hover your mouse over me for a few seconds to see my dynamically bound
+        title!
+      </span>
+    </div>
+    <div id="app-3">
+      <span v-if="seen">Now you see me</span>
+    </div>
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+      </ol>
+    </div>
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="dise">
+      <p>{{ display }}</p>
+      <button v-on:click="diseroll">サイコロ振る</button>
+    </div>
+
+    <!-- js 内容 -->
+    <script>
+      var app7 = new Vue({
+        el: "#dise",
+        data: {
+          display: "ここに結果がでます！",
+        },
+        methods: {
+          diseroll: function () {
+            var min = 1;
+            var max = 6;
+            let x = Math.floor(Math.random() * (max + 1 - min)) + min;
+            this.display = Math.floor(x);
+            function sleep(waitSec, callbackFunc) {
+              // 経過時間（秒）
+              var spanedSec = 0;
+
+              // 1秒間隔で無名関数を実行
+              var id = setInterval(function () {
+                spanedSec++;
+
+                // 経過時間 >= 待機時間の場合、待機終了。
+                if (spanedSec >= waitSec) {
+                  // タイマー停止
+                  clearInterval(id);
+
+                  // 完了時、コールバック関数を実行
+                  if (callbackFunc) callbackFunc();
+                }
+              }, 1000);
+            }
+            for (let i = 0; i < 30; i++) {
+              let x = Math.floor(Math.random() * (max + 1 - min)) + min;
+              this.display = Math.floor(x);
+              // sleep(50);
+            }
+          },
+        },
+      });
+
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!",
+        },
+        methods: {
+          reverseMessage: function () {
+            this.message = this.message.split("").reverse().join("");
+          },
+        },
+      });
+      var app2 = new Vue({
+        el: "#app-2",
+        data: {
+          message: "You loaded this page on " + new Date().toLocaleString(),
+        },
+      });
+      var app3 = new Vue({
+        el: "#app-3",
+        data: {
+          seen: true,
+        },
+      });
+      var app4 = new Vue({
+        el: "#app-4",
+        data: {
+          todos: [
+            { text: "Learn JavaScript" },
+            { text: "Learn Vue" },
+            { text: "Build something awesome" },
+          ],
+        },
+      });
+      var app5 = new Vue({
+        el: "#app-5",
+        data: {
+          message: "Hello Vue.js!",
+        },
+        methods: {
+          reverseMessage: function () {
+            this.message = this.message.split("").reverse().join("");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+p {
+  color: white;
+}
+li {
+  list-style: none;
+}
+/* header */
+header {
+  height: 100px;
+  background-color: #1cbc9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header h1 {
+  margin-left: 3%;
+}
+.header-nav {
+  display: flex;
+  margin-right: 2%;
+}
+nav {
+  margin-right: 30px;
+}
+/* main-container */
+#main-container {
+  height: 400px;
+  background-color: rgb(163, 160, 160);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 60px;
+}
+/* second-container */
+#second-container {
+  height: 500px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.item {
+  width: 300px;
+  height: 78%;
+  background-color: #1cbc9b;
+  border-radius: 50px;
+  text-align: center;
+}
+.item .far {
+  margin-top: 18%;
+  margin-bottom: 20%;
+}
+.item h3 {
+  margin-bottom: 15px;
+}
+.item li {
+  color: white;
+  font-weight: bold;
+}
+.ctrl {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+/* third-container */
+#third-container {
+  height: 800px;
+  background-color: lightgray;
+}
+.third-mini-container {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+  justify-content: space-between;
+}
+#third-container h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+/* footer */
+footer {
+  height: 30px;
+  background-color: darkgray;
+}
+
+/* 自販機 */
+.body {
+  margin: 0 auto;
+  background-color: #e6251f;
+  height: 300px;
+  width: 250px;
+  padding-top: 15px;
+}
+.drink {
+  margin: 0 auto;
+  height: 120px;
+  width: 85%;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  border-style: none;
+  border-radius: 8px;
+  padding: 1px 2px;
+}
+.money {
+  display: flex;
+}
+#display {
+  background-color: black;
+  width: 50px;
+  color: white;
+  margin: 0 0 0 auto;
+  margin-right: 8%;
+  margin-top: 5%;
+}
+#bar {
+  text-align: right;
+  margin-right: 10%;
+  margin-top: 5px;
+}
+.drink img {
+  width: 45px;
+  height: 45px;
+}
+.drink-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+.drink-image {
+  margin-bottom: 30%;
+}
+.price {
+  font-size: 15px;
+}
+.uketori {
+  width: 85%;
+  height: 50px;
+  background-color: rgb(88, 88, 88);
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+/* 持ち物 */
+.myitem {
+  background-color: lightblue;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: "Yu Gothic";
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.coin {
+  width: 80px;
+  height: 80px;
+}
+#button-100 {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.myitem div {
+  margin-bottom: 10px;
+}
+.myitem h3 {
+  margin-top: 10px;
+  margin-bottom: 17%;
+}
+.left-container {
+  width: 50%;
+  float: left;
+}
+.right-container {
+  float: left;
+}

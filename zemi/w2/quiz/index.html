@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <style>
+      .choice {
+        border: medium solid #fff;
+        height: 80px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        margin-top: 3px;
+      }
+      .line {
+        margin-top: 10px;
+      }
+    </style>
+    <!-- 問題文 -->
+    <h2>Q: くしゃみの速度はどのくらい？？</h2>
+    <h3>▶選択肢</h3>
+    <div class="choice">
+      <button id="choice-1">1. 自動車くらい(60km/h)</button>
+      <button id="choice-2">2. チーターくらい(120km/h)</button>
+      <button id="choice-3">3. 新幹線以上(300km/h)</button>
+    </div>
+    <!-- 回答 -->
+    <div class="line">
+      ----------------------------------------------------------------------------------------
+    </div>
+    <pre id="feedback"></pre>
+    <!-- <div id="feedback2"></div> -->
+
+    <!-- jsファイル読み込み -->
+    <script src="quiz.js"></script>
+  </body>
+</html>
