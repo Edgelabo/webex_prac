@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        background-color: red;
+        height: 300px;
+        width: 180px;
+      }
+      .drink {
+        height: 120px;
+        width: 140px;
+        margin-left: 20px;
+        margin-top: 30px;
+        background-color: gray;
+      }
+      #button-cola {
+        margin-left: 40px;
+        margin-top: 40px;
+      }
+      .money {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="drink">
+        <button id="button-cola">コーラ</button>
+      </div>
+      <div class="money">
+        <p>　投入金額:　</p>
+        <p id="display">0</p>
+      </div>
+      <div id="display2"></div>
+      <div id="display3"></div>
+    </div>
+    <button id="button-100">100円</button>
+
+    <script src="jihanki.js"></script>
+  </body>
+</html>

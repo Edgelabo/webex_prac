@@ -2,10 +2,16 @@ const inputElement = document.getElementById("input-todo")
 const container = document.getElementById("cards-container")
 const addButton = document.getElementById("add-button")
 
+let list = []
+
+list = JSON.parse(localStorage["todoes"])
+
+
 // 追加ボタンの処理
 addButton.onclick = function () {
   const card = createCard(inputElement.value)
   container.append(card)
+  localStorage["todoes"] =JSON.stringify(list)
 
   inputElement.value = ''
 }
@@ -15,6 +21,7 @@ inputElement.onkeydown = function (e) {
     const card = createCard(inputElement.value)
     container.append(card)
 
+    localStorage["todoes"] =JSON.stringify(list)
     inputElement.value = ''
   }
 }

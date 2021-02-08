@@ -3,18 +3,12 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:prettier/recommended"
-    ],
-    "plugins": [
-        "html",
-        "prettier"
-    ],
+    extends: ["eslint:recommended"],
+    plugins: ["eslint-plugin-html"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
-        "Vue": "readonly"
+        Vue: true,
     },
     "parserOptions": {
         "ecmaVersion": 2018

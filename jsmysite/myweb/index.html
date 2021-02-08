@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <title>My name</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Edge</h1>
+      <div class="header-nav">
+        <nav><a href="#main-container">Home</a></nav>
+        <nav><a href="#second-container">About</a></nav>
+        <nav><a href=".third-container">Tools</a></nav>
+      </div>
+    </header>
+    <div id="main-container">
+      <div class="contents">
+        <p>Hello!</p>
+        <p>I'm Ekkun！</p>
+        <!-- instagram -->
+        <!-- facebook -->
+      </div>
+    </div>
+
+    <!-- Main Contents -->
+    <div id="second-container">
+      <div class="item">
+        <!-- 画像挿入 -->
+        <i class="far fa-address-card fa-6x"></i>
+        <h3>About</h3>
+        <ul>
+          <li>Name: 仁礼悦治</li>
+          <li>Age: 20</li>
+          <li>From: 東京</li>
+        </ul>
+      </div>
+      <div class="item">
+        <!-- 画像挿入 -->
+        <i class="far fa-laugh-beam fa-6x"></i>
+        <h3>Hobby</h3>
+        <ul>
+          <li>・ラーメン屋めぐり</li>
+          <li>・ラップバトル</li>
+          <li>・ボルダリング</li>
+        </ul>
+      </div>
+      <div class="item">
+        <!-- 画像挿入 -->
+        <i class="far fa-keyboard fa-6x"></i>
+        <h3>Favorite</h3>
+        <p>好きなショートカットキーは、</p>
+        <p class="ctrl">Ctrl + F</p>
+      </div>
+    </div>
+    <div id="third-container">
+      <h2>Mini-tool</h2>
+      <div class="third-mini-container">
+        <div class="vending">
+          <!-- 自販機 -->
+          <div class="body">
+            <div class="drink">
+              <div class="drink-item">
+                <img src="image/cola.png" alt="100" class="drink-image" />
+                <button id="button-cola">コーラ</button>
+                <p class="price">150円</p>
+              </div>
+              <div class="drink-item">
+                <img src="image/orange.png" alt="100" class="drink-image" />
+                <button id="button-orange">オレンジ</button>
+                <p class="price">100円</p>
+              </div>
+              <div class="drink-item">
+                <img src="image/coffe.png" alt="100" class="drink-image" />
+                <button id="button-coffee">コーヒー</button>
+                <p class="price">120円</p>
+              </div>
+            </div>
+            <div id="display">0</div>
+            <div id="bar"><i class="fas fa-arrow-left"></i></div>
+            <div class="uketori"></div>
+          </div>
+        </div>
+        <!-- 自分の持ち物 -->
+        <div class="myitem">
+          <h3>持ち物</h3>
+          <div class="left-container">
+            <img src="image/coin.png" alt="100" class="coin" id="button-100" />
+            <br />
+            所持金
+            <div id="money">1000円</div>
+          </div>
+          <div class="rignt-container">
+            コーラ
+            <div id="cola">0個</div>
+            オレンジ
+            <div id="orange">0個</div>
+            コーヒー
+            <div id="coffee">0個</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
